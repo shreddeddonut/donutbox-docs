@@ -2,7 +2,7 @@ name: mkdocs-build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -19,9 +19,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Deploy to GitHub Pages
-        run: |
-          mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force
