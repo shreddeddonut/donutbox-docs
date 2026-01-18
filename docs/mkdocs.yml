@@ -1,1 +1,6 @@
-
+site_name: Donutbox
+site_url: https://donutbox.dev
+theme:
+  name: material
+nav:
+  - Home: index.md
