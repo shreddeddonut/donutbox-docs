@@ -15,9 +15,12 @@ or needed in the homelab. Grab what you need — no fluff, no essays.</div>
   <span class="db-term-title">donutbox@homelab</span>
 </div>
 <div class="db-term-body"><span class="db-prompt">$</span> <span class="db-cmd">cat sections.txt</span>
-<span class="db-out">scripts   — full scripts I've written or collected
-snippets  — short one-off commands and configs
-notes     — homelab notes, gotchas, and how-tos</span>
+<span class="db-out">macos    — scripts, snippets and notes for Apple boxes
+jamf     — Jamf Pro administration and policies
+linux    — scripts, snippets and notes for Linux
+windows  — scripts, snippets and notes for Windows
+homelab  — notes, gotchas and how-tos
+scripts  — cross-platform, works anywhere</span>
 <span class="db-prompt">$</span> <span class="db-cmd">grep -r "gotcha" notes/</span>
 <span class="db-out">plenty. you've been warned.</span></div>
 </div>
@@ -28,19 +31,34 @@ notes     — homelab notes, gotchas, and how-tos</span>
 
 <div class="db-cards">
 
+<a class="db-card" href="macos/">
+<div class="db-card-title">macOS</div>
+<div class="db-card-desc">Scripts, snippets and notes for Apple boxes.</div>
+</a>
+
+<a class="db-card" href="jamf/">
+<div class="db-card-title">Jamf</div>
+<div class="db-card-desc">Jamf Pro administration, policies, and scripts.</div>
+</a>
+
+<a class="db-card" href="linux/">
+<div class="db-card-title">Linux</div>
+<div class="db-card-desc">Scripts, snippets and notes for Linux boxes.</div>
+</a>
+
+<a class="db-card" href="windows/">
+<div class="db-card-title">Windows</div>
+<div class="db-card-desc">Scripts, snippets and notes for Windows machines.</div>
+</a>
+
+<a class="db-card" href="homelab/">
+<div class="db-card-title">Homelab</div>
+<div class="db-card-desc">Homelab notes, gotchas, and how-tos.</div>
+</a>
+
 <a class="db-card" href="scripts/">
 <div class="db-card-title">Scripts</div>
-<div class="db-card-desc">Full scripts I've written or collected — backup, monitoring, automation.</div>
-</a>
-
-<a class="db-card" href="snippets/">
-<div class="db-card-title">Snippets</div>
-<div class="db-card-desc">Short one-off commands and configs — the bits you forget after a month.</div>
-</a>
-
-<a class="db-card" href="notes/">
-<div class="db-card-title">Notes</div>
-<div class="db-card-desc">Homelab notes, gotchas, and how-tos — the hard-won lessons.</div>
+<div class="db-card-desc">Cross-platform scripts that work anywhere.</div>
 </a>
 
 </div>

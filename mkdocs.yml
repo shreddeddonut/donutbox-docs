@@ -62,9 +62,29 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Scripts:
-      - scripts/index.md
-  - Snippets:
-      - snippets/index.md
-  - Notes:
-      - notes/index.md
+  - macOS:
+      - macos/index.md
+      - Scripts: macos/scripts.md
+      - Snippets: macos/snippets.md
+      - Notes: macos/notes.md
+  - Jamf:
+      - jamf/index.md
+      - Scripts: jamf/scripts.md
+      - Snippets: jamf/snippets.md
+      - Notes: jamf/notes.md
+  - Linux:
+      - linux/index.md
+      - Scripts: linux/scripts.md
+      - Snippets: linux/snippets.md
+      - Notes: linux/notes.md
+  - Windows:
+      - windows/index.md
+      - Scripts: windows/scripts.md
+      - Snippets: windows/snippets.md
+      - Notes: windows/notes.md
+  - Homelab:
+      - homelab/index.md
+      - Scripts: homelab/scripts.md
+      - Snippets: homelab/snippets.md
+      - Notes: homelab/notes.md
+  - Scripts: scripts/index.md
