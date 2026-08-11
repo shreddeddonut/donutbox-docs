@@ -1,0 +1,219 @@
+/* ============ Donutbox custom theme ============ */
+/* Dark-first, amber "donut glaze" accent.         */
+
+/* --- typography --- */
+:root {
+  --db-font-display: "Space Grotesk", "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  --db-font-body: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  --db-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --db-amber: #f59e0b;
+  --db-amber-bright: #fbbf24;
+  --db-amber-dim: #b45309;
+  --db-bg-deep: #0f1115;
+  --db-bg-card: #161a22;
+  --db-border: #262c38;
+}
+
+[data-md-color-scheme="donutbox-dark"] {
+  --md-default-bg-color: var(--db-bg-deep);
+  --md-default-fg-color: #e5e7eb;
+  --md-default-fg-color--light: #9ca3af;
+  --md-primary-fg-color: var(--db-amber);
+  --md-primary-fg-color--light: var(--db-amber-bright);
+  --md-primary-fg-color--dark: var(--db-amber-dim);
+  --md-accent-fg-color: var(--db-amber-bright);
+  --md-typeset-a-color: var(--db-amber-bright);
+  --md-code-bg-color: var(--db-bg-card);
+  --md-code-fg-color: #d1d5db;
+  --md-typeset-table-color: var(--db-border);
+}
+
+[data-md-color-scheme="donutbox-light"] {
+  --md-default-bg-color: #faf9f6;
+  --md-default-fg-color: #1f232b;
+  --md-primary-fg-color: var(--db-amber-dim);
+  --md-primary-fg-color--light: var(--db-amber);
+  --md-primary-fg-color--dark: #92400e;
+  --md-accent-fg-color: #d97706;
+  --md-typeset-a-color: #b45309;
+  --md-code-bg-color: #f3f0ea;
+  --md-code-fg-color: #374151;
+  --db-bg-card: #ffffff;
+  --db-border: #e5e7eb;
+}
+
+body {
+  font-family: var(--db-font-body);
+}
+
+.md-header, .md-tabs {
+  background-color: var(--db-bg-card);
+  backdrop-filter: blur(8px);
+}
+
+.md-header {
+  border-bottom: 1px solid var(--db-border);
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  font-family: var(--db-font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h1 {
+  color: var(--db-amber);
+}
+
+.md-typeset h2 {
+  color: var(--md-default-fg-color);
+  border-bottom: 2px solid var(--db-border);
+  padding-bottom: 0.25rem;
+}
+
+.md-typeset code, .md-typeset pre {
+  font-family: var(--db-font-mono);
+  font-size: 0.85em;
+}
+
+/* code block header bar */
+.md-typeset .highlight {
+  border: 1px solid var(--db-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* --- hero section on home --- */
+.db-hero {
+  padding: 2rem 0 1rem;
+}
+
+.db-hero .db-hero-title {
+  font-family: var(--db-font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(120deg, var(--db-amber-bright), var(--db-amber));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-md-color-scheme="donutbox-light"] .db-hero .db-hero-title {
+  background: linear-gradient(120deg, #b45309, #d97706);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.db-hero .db-hero-tagline {
+  font-family: var(--db-font-display);
+  font-size: 1.25rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1.5rem;
+}
+
+.db-hero .db-hero-sub {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.95rem;
+  max-width: 46rem;
+  line-height: 1.6;
+}
+
+/* terminal card */
+.db-term {
+  margin-top: 2rem;
+  border: 1px solid var(--db-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0a0c10;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  font-family: var(--db-font-mono);
+  font-size: 0.85rem;
+}
+
+[data-md-color-scheme="donutbox-light"] .db-term {
+  background: #111318;
+}
+
+.db-term .db-term-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--db-bg-card);
+  border-bottom: 1px solid var(--db-border);
+}
+
+.db-term .db-term-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.db-term .db-term-dot.r { background: #f87171; }
+.db-term .db-term-dot.y { background: var(--db-amber); }
+.db-term .db-term-dot.g { background: #4ade80; }
+
+.db-term .db-term-title {
+  margin-left: 0.5rem;
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.db-term .db-term-body {
+  padding: 0.9rem 1.1rem;
+  color: #d1d5db;
+  line-height: 1.7;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.db-term .db-prompt { color: var(--db-amber-bright); }
+.db-term .db-cmd { color: #e5e7eb; }
+.db-term .db-out { color: #6b7280; }
+
+/* section cards */
+.db-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.db-card {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid var(--db-border);
+  border-radius: 10px;
+  background: var(--db-bg-card);
+  text-decoration: none !important;
+  transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.db-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--db-amber-dim);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.db-card .db-card-title {
+  font-family: var(--db-font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--db-amber);
+  margin: 0 0 0.4rem;
+}
+
+.db-card .db-card-desc {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* footer */
+.md-footer-meta {
+  background-color: var(--db-bg-card) !important;
+}
