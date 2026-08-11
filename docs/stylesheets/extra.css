@@ -6,9 +6,7 @@
   --db-font-display: "Space Grotesk", "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   --db-font-body: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   --db-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --db-amber: #f59e0b;
-  --db-amber-bright: #fbbf24;
-  --db-amber-dim: #b45309;
+  --db-amber: #b45309;
   --db-bg-deep: #0f1115;
   --db-bg-card: #161a22;
   --db-border: #262c38;
@@ -18,28 +16,49 @@
   --md-default-bg-color: var(--db-bg-deep);
   --md-default-fg-color: #e5e7eb;
   --md-default-fg-color--light: #9ca3af;
+  --md-typeset-color: #e5e7eb;
   --md-primary-fg-color: var(--db-amber);
-  --md-primary-fg-color--light: var(--db-amber-bright);
-  --md-primary-fg-color--dark: var(--db-amber-dim);
-  --md-accent-fg-color: var(--db-amber-bright);
-  --md-typeset-a-color: var(--db-amber-bright);
+  --md-primary-fg-color--light: var(--db-amber);
+  --md-primary-fg-color--dark: var(--db-amber);
+  --md-primary-bg-color: #e5e7eb;
+  --md-accent-fg-color: var(--db-amber);
+  --md-typeset-a-color: var(--db-amber);
   --md-code-bg-color: var(--db-bg-card);
   --md-code-fg-color: #d1d5db;
   --md-typeset-table-color: var(--db-border);
 }
 
 [data-md-color-scheme="donutbox-light"] {
-  --md-default-bg-color: #faf9f6;
+  --md-default-bg-color: #e9ebee;
   --md-default-fg-color: #1f232b;
-  --md-primary-fg-color: var(--db-amber-dim);
+  --md-default-fg-color--light: #5f6672;
+  --md-typeset-color: #1f232b;
+  --md-primary-fg-color: var(--db-amber);
   --md-primary-fg-color--light: var(--db-amber);
-  --md-primary-fg-color--dark: #92400e;
-  --md-accent-fg-color: #d97706;
-  --md-typeset-a-color: #b45309;
-  --md-code-bg-color: #f3f0ea;
+  --md-primary-fg-color--dark: var(--db-amber);
+  --md-primary-bg-color: #1f232b;
+  --md-accent-fg-color: var(--db-amber);
+  --md-typeset-a-color: var(--db-amber);
+  --md-code-bg-color: #dfe2e7;
   --md-code-fg-color: #374151;
-  --db-bg-card: #ffffff;
-  --db-border: #e5e7eb;
+  --db-bg-card: #f2f3f5;
+  --db-border: #cfd3d9;
+}
+
+/* icon buttons in the article (edit / view source) + pilcrow links */
+.md-content__button .md-icon,
+.md-content__button svg {
+  color: var(--md-typeset-a-color);
+  fill: currentColor;
+}
+.md-content__button:hover .md-icon {
+  color: var(--md-accent-fg-color);
+}
+.md-typeset .headerlink {
+  color: var(--md-typeset-a-color);
+}
+.md-typeset .headerlink:hover {
+  color: var(--md-accent-fg-color);
 }
 
 body {
@@ -94,16 +113,11 @@ body {
   font-weight: 800;
   letter-spacing: -0.03em;
   margin: 0 0 0.5rem;
-  background: linear-gradient(120deg, var(--db-amber-bright), var(--db-amber));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--db-amber);
 }
 
 [data-md-color-scheme="donutbox-light"] .db-hero .db-hero-title {
-  background: linear-gradient(120deg, #b45309, #d97706);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: var(--db-amber);
 }
 
 .db-hero .db-hero-tagline {
@@ -170,7 +184,7 @@ body {
   overflow-x: auto;
 }
 
-.db-term .db-prompt { color: var(--db-amber-bright); }
+.db-term .db-prompt { color: var(--db-amber); }
 .db-term .db-cmd { color: #e5e7eb; }
 .db-term .db-out { color: #6b7280; }
 
@@ -194,7 +208,7 @@ body {
 
 .db-card:hover {
   transform: translateY(-2px);
-  border-color: var(--db-amber-dim);
+  border-color: var(--db-amber);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
