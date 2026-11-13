@@ -1,1 +1,6 @@
 mkdocs-material
+mkdocs-git-revision-date-localized-plugin
+mkdocs-minify-plugin
+mkdocs-meta-descriptions-plugin
+pillow
+cairosvg

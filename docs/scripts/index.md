@@ -1,5 +1,11 @@
 # Scripts
 
-Cross-platform scripts that work anywhere — bash, PowerShell, zsh, Python.
+Cross-platform scripts that work anywhere — bash, Python, zsh.
 
-*Nothing here yet. Drop a file in and push to main to publish.*
+## Bash
+
+- [Disk usage checker](disk-usage.md)
+
+## Python
+
+- [Bulk file renamer](bulk-rename.md)
